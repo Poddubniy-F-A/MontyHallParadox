@@ -1,5 +1,6 @@
 import java.util.HashSet;
 
+@FunctionalInterface
 public interface Strategy {
-    int getFinalChoice(HashSet<Integer> voidDoors, int playerChoice);
+    int getFinalChoice(int playerChoice, HashSet<Integer> voidDoors);
 }
